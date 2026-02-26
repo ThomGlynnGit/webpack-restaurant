@@ -9,3 +9,5 @@ function homeLoad(){
     contentCont.appendChild(welcomeCont)
 
 }
+
+export default homeLoad()
