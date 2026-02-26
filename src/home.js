@@ -5,6 +5,7 @@ function homeLoad(){
     const welcomeText = document.createElement("h2")
     welcomeText.className = "welcome"
     welcomeCont.className = "welcome-container"
+    welcomeText.textContent = "Welcome"
     welcomeCont.appendChild(welcomeText)
     contentCont.appendChild(welcomeCont)
 
