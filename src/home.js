@@ -1,6 +1,6 @@
 import homeImage from "./images/home.jpg";
 
-function homeLoad(){
+export default function homeLoad(){
     const contentCont = document.querySelector(".content")
 
     const welcomeCont = document.createElement("div")
@@ -18,5 +18,3 @@ function homeLoad(){
     contentCont.appendChild(homeImg)
 
 }
-
-export default homeLoad()

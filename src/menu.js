@@ -1,4 +1,4 @@
-function menuLoad(){
+export default function menuLoad(){
     const contentCont = document.querySelector(".content")
 
     const headCont = document.createElement("div")
@@ -21,5 +21,3 @@ function menuLoad(){
     startersCont.className = "menu starters"
 
 }
-
-export default menuLoad()
