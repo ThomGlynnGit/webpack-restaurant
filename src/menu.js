@@ -11,6 +11,7 @@ export default function menuLoad(){
 
     const menuCont = document.createElement("div")
     menuCont.className = "menu container"
+    contentCont.appendChild(menuCont)
 
     const startersCont = document.createElement("div")
     const startersHead = document.createElement("h3")
@@ -19,5 +20,21 @@ export default function menuLoad(){
     const oliveStarter = document.createElement("p")
 
     startersCont.className = "menu starters"
+    startersHead.className = "menu-section starters"
+    fishStarter.className = "starters item"
+    vegStarter.className = "starters item"
+    oliveStarter.className = "starters item"
+
+    startersHead.textContent = "Starters"
+    fishStarter.textContent = "sardinian sardines in sweet sauce"
+    vegStarter.textContent = "braised brocolli with bernaise glaze"
+    oliveStarter.textContent = "just some olives - good ones though"
+
+    startersCont.appendChild(startersHead)
+    startersCont.appendChild(fishStarter)
+    startersCont.appendChild(vegStarter)
+    startersCont.appendChild(oliveStarter)
+    menuCont.appendChild(startersCont)
+
 
 }
