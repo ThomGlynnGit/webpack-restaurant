@@ -1,5 +1,7 @@
 import homeLoad from "./home.js"
 import menuLoad from "./menu.js"
+import aboutLoad from "./about.js"
+import "./styles.css"
 
 const homeBtn = document.querySelector("#homeBtn")
 const menuBtn = document.querySelector("#menuBtn")
@@ -16,4 +18,9 @@ homeBtn.addEventListener("click", ()=> {
 menuBtn.addEventListener("click", ()=> {
     contentCont.replaceChildren()
     menuLoad()
+})
+
+aboutBtn.addEventListener("click", ()=> {
+    contentCont.replaceChildren()
+    aboutLoad()
 })
