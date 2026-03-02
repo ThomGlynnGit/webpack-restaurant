@@ -61,5 +61,29 @@ export default function menuLoad(){
     mainsCont.appendChild(pizzaMain)
     menuCont.appendChild(mainsCont)
 
+    //desserts elements 
+    const dessertsCont = document.createElement("div")
+    const dessertsHead = document.createElement("h3")
+    const chocDessert = document.createElement("p")
+    const veganDessert = document.createElement("p")
+    const pizzaDessert = document.createElement("p")
+
+    dessertsCont.className = "menu desserts"
+    dessertsHead.className = "menu-section desserts"
+    chocDessert.className = "desserts item"
+    veganDessert.className = "desserts item"
+    pizzaDessert.className = "desserts item"
+
+    dessertsHead.textContent = "Desserts"
+    chocDessert.textContent = "creamed chocolate cannoli"
+    veganDessert.textContent = "vegan vanilla vol-au-vent"
+    pizzaDessert.textContent = "chocolate bread (pizza)"
+
+    dessertsCont.appendChild(dessertsHead)
+    dessertsCont.appendChild(chocDessert)
+    dessertsCont.appendChild(veganDessert)
+    dessertsCont.appendChild(pizzaDessert)
+    menuCont.appendChild(dessertsCont)
+
 
 }
